@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate food through our Waste Food Management and Donation platform. Help reduce food waste and feed the needy.">
+    <meta name="keywords" content="food donation, waste food management, charity, hunger relief">
+    <meta name="author" content="WFMD">
+    <title>Donate Food - Waste Food Management and Donation</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">WFMD</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="features.html">How It Works</a></li>
+                    <li><a href="getinvolved.html">Get Involved</a></li>
+                    <li><a href="rules.html">Rules & Regulations</a></li>
+                    <li><a href="receiver_feedback.html">Feedback</a></li>
+                    <li>
+                        <label for="login-toggle" class="btn-login">Login</label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login Form (Using CSS for visibility toggle) -->
+    <input type="checkbox" id="login-toggle" class="hidden-checkbox">
+    <div class="dropdown-content" id="login-form">
+        <form class="login-form">
+            <h2>Login</h2>
+            <div class="input-container">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Username" required aria-label="Username">
+            </div>
+            <div class="input-container">
+                <i class="fa fa-lock"></i>
+                <input type="password" placeholder="Password" required aria-label="Password">
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <div class="register">
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero hero-donate">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Donate Food and Make a Difference Today</h1>
+                    <p>Your excess food can help feed those in need. Use the form below to contribute food donations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Form Section -->
+        <section class="donation-form">
+            <div class="container">
+                <h2 class="section-title">Food Donation Form</h2>
+                <form class="donor-form" action="thankyou.html" method="POST">
+                    <label for="donorName">Donor Name:</label>
+                    <input type="text" id="donorName" name="donorName" placeholder="Enter your full name" required>
+
+                    <label for="foodType">Type of Food:</label>
+                    <input type="text" id="foodType" name="foodType" placeholder="Enter the type of food" required>
+
+                    <label for="quantity">Quantity (in kg):</label>
+                    <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity in kilograms" required min="1">
+
+                    <label for="pickupLocation">Pickup Location:</label>
+                    <input type="text" id="pickupLocation" name="pickupLocation" placeholder="Enter the address for pickup" required>
+
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your contact number" required pattern="[0-9]{10}">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                    <button type="submit" class="btn-primary">Submit Donation</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="features.html">How It Works</a></li>
+                        <li><a href="getinvolved.html">Get Involved</a></li>
+                        <li><a href="receiver_feedback.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WasteNot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

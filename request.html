@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Food Management and Donation</title>
+    <link rel="stylesheet" href="request.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="home.html">WFMD</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="features.html">How It Works</a></li>
+                    <li><a href="getinvolve.html">Get Involved</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="reciver_feedback.html">Feedback</a></li>
+                </ul>
+
+                <!-- Login Button -->
+                <a href="login.html" class="btn-login">Login</a>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Share the Love, Taste the Goodness!</h1>
+            <h2>Order delicious, donated meals and help those in need.</h2>
+            <input type="text" placeholder="What are you craving today?" class="search-bar">
+            <button class="cta-button">Browse Donations</button>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <h2>Explore Categories</h2>
+        <div class="categories-container">
+            <div class="category-card" data-category="fresh-produce">Fresh Produce</div>
+            <div class="category-card" data-category="ready-to-eat">Ready-to-Eat Meals</div>
+            <div class="category-card" data-category="baked-goods">Baked Goods</div>
+            <div class="category-card" data-category="snacks-treats">Snacks & Treats</div>
+        </div>
+    </section>
+
+    <!-- Highlighted Donated Meals -->
+<section class="highlighted-meals">
+    <h2>Recently Donated Meals</h2>
+    <div class="meals-container">
+        <div class="meal-card">
+            <img src="vegetablebiriyani.jpg" alt="Vegetable Biryani">
+            <h3>Vegetable Biryani</h3>
+            <p>Aromatic basmati rice cooked with mixed vegetables and spices.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="chole_bhature.jpg" alt="Chole Bhature">
+            <h3>Chole Bhature</h3>
+            <p>Spicy chickpeas served with fluffy deep-fried bread.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="paneer_tikka.jpg" alt="Paneer Tikka">
+            <h3>Paneer Tikka</h3>
+            <p>Grilled cottage cheese marinated in spices and yogurt.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="dal_makhni.jpg" alt="Dal Makhani">
+            <h3>Dal Makhani</h3>
+            <p>Creamy black lentils cooked slowly with spices.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="aloo_gobi.jpg" alt="Aloo Gobi">
+            <h3>Aloo Gobi</h3>
+            <p>Potatoes and cauliflower cooked with Indian spices.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="butter_chicken.jpg" alt="Butter Chicken">
+            <h3>Butter Chicken</h3>
+            <p>Chicken cooked in a creamy tomato sauce.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="pav_bhaji.jpg" alt="Pav Bhaji">
+            <h3>Pav Bhaji</h3>
+            <p>Spicy mixed vegetable mash served with bread rolls.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="masala_dosa.jpg" alt="Masala Dosa">
+            <h3>Masala Dosa</h3>
+            <p>Crispy rice crepe filled with spiced potato filling.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+    
+        <div class="meal-card">
+            <img src="../CODE/images/" alt="Vegan Buddha Bowl">
+            <h3>Vegan Buddha Bowl</h3>
+            <p>Colorful mix of fresh veggies, grains, and a light dressing.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="path/to/meal-image.jpg" alt="Chicken Caesar Salad">
+            <h3>Chicken Caesar Salad</h3>
+            <p>Grilled chicken with romaine lettuce, croutons, and Caesar dressing.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="path/to/meal-image.jpg" alt="Vegetable Stir-Fry">
+            <h3>Vegetable Stir-Fry</h3>
+            <p>Mixed vegetables stir-fried with soy sauce and garlic.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        <div class="meal-card">
+            <img src="path/to/meal-image.jpg" alt="Mango Lassi">
+            <h3>Mango Lassi</h3>
+            <p>Refreshing mango yogurt smoothie.</p>
+            <button class="add-to-cart-button" onclick="addToCart('Vegetable Biryani')">Add to Cart</button>
+        </div>
+        
+
+        <!-- Items in Cart Button -->
+        <button class="cart-button" onclick="openCart()">Items in Cart</button>
+
+        <!-- Checkout Modal -->
+        <div id="checkout-modal" class="modal hidden">
+            <!-- Step 1: Review Cart Items -->
+            <div id="step1" class="checkout-step">
+                <h2>Step 1: Review Cart Items</h2>
+                <ul id="cart-items-list"></ul>
+                <button onclick="proceedToStep2()">Proceed to Step 2</button>
+            </div>
+
+            <!-- Step 2: Customer Details -->
+            <div id="step2" class="checkout-step hidden">
+                <h2>Step 2: Enter Details</h2>
+                <form id="customer-details">
+                    <label for="ngo-name">NGO Name:</label>
+                    <input type="text" id="ngo-name" required>
+                    <label for="requestor-name">Requestor's Name:</label>
+                    <input type="text" id="requestor-name" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                    <label for="location">Delivery Location:</label>
+                    <input type="text" id="location" required>
+                </form>
+                <button onclick="proceedToStep3()">Proceed to Step 3</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="features.html">How It Works</a></li>
+                        <li><a href="getinvolve.html">Get Involved</a></li>
+                        <li><a href="reciver_feedback.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="quick-contact">
+                    <h3>Quick Contact</h3>
+                    <ul>
+                        <li>Email: <a href="mailto:info@foodmanagement.com">info@foodmanagement.com</a></li>
+                        <li>Phone: <a href="tel:+919823463243">+91 9823463243</a></li>
+                        <li>Address: 123 Food St, Donation City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Waste Food Management & Donation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

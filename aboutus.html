@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Food Management and Donation</title>
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">WFMD</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="Feautures.html">How It Works</a></li>
+                    <li><a href="getinvolve.html">Get Involved</a></li>
+                    <li><a href="rules.html">Rules and Regulations</a></li>
+                    <li><a href="reciver_feedback.html">Feedback</a></li>
+                    <li><a href="login.html" class="btn-Login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Together, We Can End Food Waste and Hunger</h1>
+                <p>Donate excess food, save the planet, and feed those in need.</p>
+                <div class="hero-buttons">
+                    <a href="donate.html" class="btn-primary">Donate Food</a>
+                    <a href="#" class="btn-secondary">Learn How It Works</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>We are dedicated to reducing food waste and combating hunger through our innovative platform. Our mission is to connect donors, volunteers, and recipients to create a sustainable food donation system. Join us in making a positive impact on our communities and the environment.</p>
+        <p>Our vision is to create a world where no one goes hungry and where food is cherished rather than wasted. We believe in the power of community, and by working together, we can transform excess food into nourishment for those in need.</p>
+        <p>We partner with local businesses, organizations, and volunteers to ensure that food donations are distributed efficiently and effectively. Our team is committed to transparency, accountability, and fostering relationships that strengthen our communities.</p>
+        <p>Through education and outreach, we aim to raise awareness about the importance of food sustainability and inspire others to take action. Together, we can build a healthier, more equitable future for all.</p>
+
+        <h3>Our Team</h3>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="path_to_ayan_image.jpg" alt="Ayan Ghosh">
+                <h4>Ayan Ghosh</h4>
+                <p>Co-Founder & Project Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="path_to_ankan_image.jpg" alt="Ankan Ghosh">
+                <h4>Ankan Ghosh</h4>
+                <p>Co-Founder & Operations Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="path_to_mehali_image.jpg" alt="Mehali Basu">
+                <h4>Mehali Basu</h4>
+                <p>Community Outreach Coordinator</p>
+            </div>
+            <div class="team-member">
+                <img src="path_to_aheli_image.jpg" alt="Aheli Dey">
+                <h4>Aheli Dey</h4>
+                <p>Marketing Specialist</p>
+            </div>
+            <div class="team-member">
+                <img src="path_to_abir_image.jpg" alt="Abir Pramanick">
+                <h4>Abir Pramanick</h4>
+                <p>Technical Lead</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Option Buttons Section -->
+    <section id="register-options" class="form hidden" style="display: none;">
+        <h2>Select Registration Type</h2>
+        <button onclick="showDonorForm()">Register as Donor</button>
+        <button onclick="showRequestorForm()">Register as Requestor</button>
+    </section>
+
+    <!-- Donor Registration Form -->
+    <section id="donor-form" class="form hidden" style="display: none;">
+        <h2>Register as Donor</h2>
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname" required>
+            <label for="shopname">Shop Name:</label>
+            <input type="text" name="shopname" id="shopname" required>
+            <label for="shoplocation">Shop Location:</label>
+            <input type="text" name="shoplocation" id="shoplocation" required>
+            <label for="phone">Phone No.:</label>
+            <input type="tel" name="phone" id="phone" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <p class="password-note">Note: Use a strong password<br>
+                - At least one number (1-9)<br>
+                - At least one special character<br>
+                - Do not repeat a character 3 times in a row
+            </p>
+            <button type="submit">Register as Donor</button>
+        </form>
+    </section>
+
+    <!-- Requestor Registration Form -->
+    <section id="requestor-form" class="form hidden" style="display: none;">
+        <h2>Register as Requestor</h2>
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname" required>
+            <label for="ngoname">NGO Name:</label>
+            <input type="text" name="ngoname" id="ngoname" required>
+            <label for="ngoreg">NGO Registration No.:</label>
+            <input type="text" name="ngoreg" id="ngoreg" required>
+            <label for="phone">Phone No.:</label>
+            <input type="tel" name="phone" id="phone" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <p class="password-note">Note: Use a strong password<br>
+                - At least one number (1-9)<br>
+                - At least one special character<br>
+                - Do not repeat a character 3 times in a row
+            </p>
+            <button type="submit">Register as Requestor</button>
+        </form>
+    </section>
+   <!-- Footer Section -->
+   <footer class="footer">
+    <div class="container">
+        <!-- Footer Top: Links and Social Media -->
+        <div class="footer-top">
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="Feautures.html">How It Works</a></li>
+                    <li><a href="getinvolve.html">Get Involved</a></li>
+                    <li><a href="reciver_feedback.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="quick-contact">
+                <h3>Quick Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:info@foodmanagement.com">info@foodmanagement.com</a></li>
+                    <li>Phone: <a href="tel:+919823463243">+91 9823463243</a></li>
+                    <li>Address: 123 Food St, Donation City</li>
+                </ul>
+            </div>
+            
+            <!-- Footer Social Media -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom: Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 WasteNot. All rights reserved.</p>
+        </div>
+    </div>
+   </footer>
+    <script src="bundle.js"></script>
+</body>
+</html>

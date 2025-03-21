@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Food Management and Donation</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="home.html">WFMD</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="Feautures.html">How It Works</a></li>
+                    <li><a href="getinvolve.html">Get Involved</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="reciver_feedback.html">Feedback</a></li>
+                </ul>
+
+                <!-- Login Button -->
+                <a href="login.html" class="btn-login">Login</a>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    ☰
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Features</h1>
+                <p>Explore the features that make our app a powerful tool for reducing food waste and helping those in need.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Easy Food Donations</h3>
+                    <p>Individuals and businesses can donate surplus food with ease, making the process seamless and efficient.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Real-Time Notifications</h3>
+                    <p>Receive instant notifications when food donations are available for pickup by charities and food banks.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>User-Friendly Interface</h3>
+                    <p>The app is simple and easy to use, allowing users of all types to engage effortlessly.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Impact Tracking</h3>
+                    <p>Track the difference your food donations make, from delivery to the positive impact on communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="get-involved">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <p>Join us in our mission to reduce food waste. Whether you’re a donor, volunteer, or recipient, you can make an impact.</p>
+            <div class="cta-buttons">
+                <a href="donate.html" class="cta-button cta-donate">Become a Donor</a>
+                <a href="#" class="cta-button cta-volunteer">Become a Volunteer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="getinvolve.html">Get Involved</a></li>
+                        <li><a href="reciver_feedback.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="quick-contact">
+                    <h3>Quick Contact</h3>
+                    <ul>
+                        <li>Email: <a href="mailto:info@foodmanagement.com">info@foodmanagement.com</a></li>
+                        <li>Phone: <a href="tel:+919823463243">+91 9823463243</a></li>
+                        <li>Address: 123 Food St, Donation City</li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Waste Food Management and Donation App. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

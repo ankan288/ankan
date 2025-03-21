@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Back | Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+      <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+              <a href="#">WFMD</a>
+          </div>
+
+          <!-- Navigation Menu -->
+          <nav class="nav-menu">
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="Feautures.html">How It Works</a></li>
+                  <li><a href="getinvolve.html">Get Involved</a></li>
+                  <li><a href="rules.html">Rules and Regulations</a></li>
+                  <li><a href="reciver_feedback.html">Feedback</a></li>
+                  <li><a href="login.html" class="btn-Login">Login</a></li>
+              </ul>
+          </nav>
+
+  </header>
+
+  <div class="container">
+    <div class="left-section">
+      <h1>Welcome Back</h1>
+      <p>
+        Let's turn excess into impact — together we can reduce food waste and make a difference. Ready to get started?"
+      </p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+    
+    <div class="right-section">
+      <h2>Sign in</h2>
+      <form action="#">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <div class="options">
+          <div class="remember-me">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+          </div>
+          <a href="#">Lost your password?</a>
+        </div>
+
+        <button type="submit">Sign in now</button>
+
+        <p class="terms">
+          By clicking on "Sign in now" you agree to our 
+          <a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a>
+        </p>
+
+        <!-- New Sign-up Section -->
+        <p class="signup-text">
+          Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", async function (e) {
+        e.preventDefault(); // Prevent default form submission
+  
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+  
+        try {
+            const response = await fetch("http://localhost:5000/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, password }),
+            });
+  
+            const result = await response.json();
+  
+            if (response.ok) {
+                alert("Login successful!");
+                localStorage.setItem("userId", result.userId); // Store user session
+                window.location.href = "dashboard.html"; // Redirect after login
+            } else {
+                alert(result.error); // Show error message
+            }
+        } catch (error) {
+            alert("Something went wrong! Please try again.");
+            console.error(error);
+        }
+    });
+  </script>
+  <script src="login.js"></script>
+</body>
+</html>

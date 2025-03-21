@@ -1,0 +1,197 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background: url('Gemini_Generated_Image_q0icdeq0icdeq0ic.jpeg') no-repeat center center/cover;
+    color: #ffffff;
+}
+
+/* Header Section */
+.header {
+    background-color: rgba(15, 23, 42, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo a {
+    font-size: 28px;
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin-right: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #22c55e;
+}
+
+.btn-Login {
+    background-color: #22c55e;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: #0f172a;
+    transition: background 0.3s ease;
+}
+
+.btn-Login:hover {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+}
+
+/* Signup Section */
+.signup-section {
+    background-color: rgba(15, 23, 42, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.signup-section h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signup-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d1d5db;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    background-color: #1e293b;
+    border: 1px solid #374151;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    width: 100%;
+}
+
+form input:focus {
+    border-color: #22c55e;
+}
+
+/* Signup Button */
+.signup-btn {
+    background-color: #22c55e;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #16a34a;
+}
+
+/* Sign-in Link */
+.signin-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signin-text a {
+    color: #22c55e;
+    text-decoration: none;
+}
+
+.signin-text a:hover {
+    text-decoration: underline;
+}
+
+/* Image Section */
+.image-section {
+    width: 50%;
+    background: url('welcome.jpg') no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.image-section .overlay {
+    background-color: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.image-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.image-section p {
+    color: #d1d5db;
+    font-size: 18px;
+}
+
+/* Success Message */
+.success-message {
+    display: none;
+    text-align: center;
+    background-color: #16a34a;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Display success message */
+.show-success {
+    display: block;
+}

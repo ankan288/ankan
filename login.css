@@ -1,0 +1,273 @@
+/* ======= Global Styles ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======= Header Styling ======= */
+.header {
+    background-color: rgba(18, 18, 18, 0.9);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ======= Logo Styling ======= */
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.logo a:hover {
+    color: #e67e22;
+}
+
+/* ======= Navigation Menu ======= */
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #f39c12;
+}
+
+/* Login Button */
+.btn-Login {
+    background: #f39c12;
+    color: #121212;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.8);
+}
+
+.btn-Login:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* ======= Page Content Layout ======= */
+/* Remove background from container */
+.container {
+    background: none;
+    box-shadow: none;
+}
+
+/* Optional: Adjust text color for readability */
+.left-section h1,
+.left-section p {
+    color: white; /* Adjust if needed */
+}
+
+/* ======= Left Section Styling ======= */
+.left-section {
+    flex: 1;
+    color: #fff;
+    padding-right: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.left-section h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #f39c12;
+}
+
+.left-section p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Social Media Icons */
+.social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icons i:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+
+/* Make the sign-in form nearly transparent */
+.right-section {
+    background: rgba(255, 255, 255, 0.05); /* Super low opacity */
+    backdrop-filter: blur(3px); /* Gentle blur to keep it smooth */
+    padding: 20px;
+    border-radius: 8px;
+    animation: slideInRight 1s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow for a light touch */
+}
+
+/* Ensure text inside stays readable */
+.right-section h2,
+form label,
+form input,
+form button,
+form .options a,
+.terms,
+.signup-text {
+    color: #fff; /* Keep text crisp and readable */
+}
+
+
+/* Form Styling */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Remember Me & Forgot Password Section */
+form .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+form .options a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+form .options a:hover {
+    color: #f39c12;
+}
+
+/* Submit Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Terms and Signup Section */
+.terms {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-text {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* ======= Animations ======= */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ======= Responsive Styling ======= */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-section {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+}

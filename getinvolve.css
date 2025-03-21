@@ -1,0 +1,986 @@
+/* Header */
+.header {
+    background-color: #121212; /* Dark Theme */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12;
+    text-decoration: none;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Login Button */
+.btn-login {
+    background: #f39c12;
+    color: #121212;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+    background: #e67e22;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #222;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+/* Donate Button Styles */
+.btn-Login {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #121212;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-Login:hover {
+    background-color: #e67e22;
+    color: #fff;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #ffffff;
+}
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    position: relative;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu ul li {
+    display: inline;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-Login {
+    cursor: pointer;
+}
+
+/* Dropdown form styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #5e35b1;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    padding-left: 40px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5e35b1;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forgot-password {
+    text-align: right;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5e35b1;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #673ab7;
+}
+
+.register {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register a {
+    color: #5e35b1;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+/* Buttons Styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0057d9;
+    color: #fff;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+#register-options button {
+    background-color: #007BFF;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#register-options button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Fields */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.password-note {
+    font-size: 12px;
+    color: #721c24;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Error and Success Messages */
+.message {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Hero Section Styles */
+.get-involved-hero {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+.get-involved-hero h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.get-involved-hero p {
+    font-size: 1.2rem; /* Medium font size for the paragraph */
+    margin-bottom: 30px; /* Space below the paragraph */
+    line-height: 1.5; /* Improve line spacing */
+}
+
+.hero-buttons {
+    display: flex; /* Flexbox for button alignment */
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+.btn-primary {
+    background-color: #ff5722; /* Primary button color (e.g., a shade of orange) */
+    color: #fff; /* Text color */
+    padding: 15px 30px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Font size for button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+.btn-secondary {
+    background-color: #424242; /* Secondary button color (e.g., dark gray) */
+    color: #ffeb3b; /* Light text color */
+    padding: 15px 30px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Font size for button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-secondary:hover {
+    background-color: #616161; /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .get-involved-hero h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .get-involved-hero p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+}
+
+/* Key Features Section Styles */
+.features {
+    background-color: #1f1f1f; /* Slightly lighter than body for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* General Form Styling */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.form h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+/* Input Fields */
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="password"]:focus {
+    border-color: #28a745;
+}
+
+/* Buttons */
+.form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+.form button:hover {
+    background-color: #218838;
+}
+
+/* Password Note */
+.password-note {
+    font-size: 14px;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Feature Item */
+.feature-item {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-item:hover {
+    background-color: #333333; /* Darker shade on hover */
+    transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+/* Feature Icon */
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Feature Title */
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #f39c12; /* Highlight feature titles with an orange color */
+    margin-bottom: 15px;
+}
+
+/* Feature Description */
+.feature-item p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Slightly lighter for readability */
+    line-height: 1.6;
+}
+/* How It Works Section Styles */
+.how-it-works {
+    background-color: #1f1f1f; /* Darker section background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Steps Grid */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Step Item */
+.step-item {
+    background-color: #2b2b2b;
+    padding: 40px 30px;
+    border-radius: 8px;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.step-item:hover {
+    background-color: #333333; /* Darker shade on hover */
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+/* Step Number */
+.step-number {
+    background-color: #f39c12;
+    color: #121212;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Step Title */
+.step-item h3 {
+    font-size: 1.5rem;
+    color: #f39c12; /* Orange for step titles */
+    margin-bottom: 15px;
+}
+
+/* Step Description */
+.step-item p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Slightly lighter gray for text */
+    line-height: 1.6;
+}
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #1f1f1f; /* Slight contrast with body background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Testimonial Item */
+.testimonial-item {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.testimonial-item:hover {
+    background-color: #333333; /* Darker background on hover */
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+/* Testimonial Content */
+.testimonial-content p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Slightly lighter text color for readability */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Author Image */
+.author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Author Info */
+.author-info h3 {
+    font-size: 1.2rem;
+    color: #f39c12; /* Orange color for author's name */
+    margin-bottom: 5px;
+}
+
+.author-info span {
+    font-size: 0.9rem;
+    color: #b0b0b0; /* Light gray for author’s role */
+}
+/* Statistics Section Styles */
+.statistics {
+    background-color: #1f1f1f; /* Darker background for the section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Statistics Grid */
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+/* Statistic Item */
+.stat-item {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.stat-item:hover {
+    background-color: #333333; /* Darker background on hover */
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+/* Statistic Number */
+.stat-number {
+    font-size: 3rem;
+    color: #f39c12; /* Orange color for stat numbers */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Statistic Description */
+.stat-item p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Lighter color for text */
+}
+/* Get Involved Section Styles */
+.get-involved {
+    background-color: #1f1f1f; /* Darker background for section */
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.8rem;
+    color: #f39c12; /* Highlight section title with orange */
+    margin-bottom: 20px;
+}
+
+/* CTA Description */
+.cta-description {
+    font-size: 1.2rem;
+    color: #b0b0b0; /* Light gray for description text */
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CTA Button Styles */
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button - Donate */
+.cta-donate {
+    background-color: #f39c12; /* Orange button for donors */
+}
+
+.cta-donate:hover {
+    background-color: #ffac33; /* Lighter orange on hover */
+    transform: translateY(-5px);
+}
+
+/* Button - Volunteer */
+.cta-volunteer {
+    background-color: #3498db; /* Blue button for volunteers */
+}
+
+.cta-volunteer:hover {
+    background-color: #5dade2; /* Lighter blue on hover */
+    transform: translateY(-5px);
+}
+/* Newsletter Section Styles */
+.newsletter {
+    background-color: #1f1f1f; /* Dark background for section */
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.8rem;
+    color: #f39c12; /* Highlight section title with orange */
+    margin-bottom: 20px;
+}
+
+/* Newsletter Description */
+.newsletter-description {
+    font-size: 1.2rem;
+    color: #b0b0b0; /* Lighter gray for description text */
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Newsletter Form Styles */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Newsletter Input */
+.newsletter-input {
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 400px;
+    color: #121212;
+}
+
+/* Newsletter Button */
+.newsletter-button {
+    background-color: #f39c12; /* Orange button for CTA */
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background-color: #ffac33; /* Lighter orange on hover */
+    transform: translateY(-5px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-input {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+}
+/* Footer Section Styles */
+.footer {
+    background-color: #1f1f1f; /* Darker background for footer */
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Top */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Footer Links */
+.footer-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f39c12; /* Orange highlight for headings */
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #b0b0b0; /* Light gray for link text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff; /* White color on hover */
+}
+
+/* Footer Social Media */
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f39c12; /* Orange highlight for headings */
+}
+
+.social-icons a {
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333333; /* Border between footer top and bottom */
+    padding-top: 20px;
+    color: #b0b0b0; /* Light gray for copyright text */
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

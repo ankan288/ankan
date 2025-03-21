@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver Feedback Form</title>
+    <link rel="stylesheet" href="reciver_feedback.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">WFMD</a> <!-- Logo Link -->
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="Feautures.html">How It Works</a></li>
+                    <li><a href="getinvolve.html">Get Involved</a></li>
+                    <li><a href="rules.html">Rules and Regulations</a></li>
+                    <li><a href="reciver_feedback.html">Feedback</a></li>
+                    <li><a href="login.html" class="btn-Login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="feedback-container">
+        <h1>Receiver Feedback Form</h1>
+        <form id="receiverFeedbackForm">
+            <!-- Receiver's Name -->
+            <label for="receiverName">Name:</label>
+            <input type="text" id="receiverName" name="receiverName" placeholder="Your name" required>
+            
+            <!-- Receiver's Email -->
+            <label for="receiverEmail">Email:</label>
+            <input type="email" id="receiverEmail" name="receiverEmail" placeholder="Your email" required>
+
+            <!-- NGO Name (Optional) -->
+            <label for="ngoName">NGO's Name (Optional):</label>
+            <input type="text" id="ngoName" name="ngoName" placeholder="NGO name (if applicable)">
+
+            <!-- Food Quality Rating -->
+            <label for="foodQuality">Rate the Food Quality:</label>
+            <div class="rating" id="foodQuality">
+                <input type="radio" id="food5" name="foodQuality" value="5" required><label for="food5">&#9733;</label>
+                <input type="radio" id="food4" name="foodQuality" value="4"><label for="food4">&#9733;</label>
+                <input type="radio" id="food3" name="foodQuality" value="3"><label for="food3">&#9733;</label>
+                <input type="radio" id="food2" name="foodQuality" value="2"><label for="food2">&#9733;</label>
+                <input type="radio" id="food1" name="foodQuality" value="1"><label for="food1">&#9733;</label>
+            </div>
+
+            <!-- Delivery Rating -->
+            <label for="deliveryRating">Rate the Delivery Experience:</label>
+            <div class="rating" id="deliveryRating">
+                <input type="radio" id="delivery5" name="deliveryRating" value="5" required><label for="delivery5">&#9733;</label>
+                <input type="radio" id="delivery4" name="deliveryRating" value="4"><label for="delivery4">&#9733;</label>
+                <input type="radio" id="delivery3" name="deliveryRating" value="3"><label for="delivery3">&#9733;</label>
+                <input type="radio" id="delivery2" name="deliveryRating" value="2"><label for="delivery2">&#9733;</label>
+                <input type="radio" id="delivery1" name="deliveryRating" value="1"><label for="delivery1">&#9733;</label>
+            </div>
+
+            <!-- Donor's Behavior Rating -->
+            <label for="behaviorRating">Rate the Donor's Behavior:</label>
+            <div class="rating" id="behaviorRating">
+                <input type="radio" id="behavior5" name="behaviorRating" value="5" required><label for="behavior5">&#9733;</label>
+                <input type="radio" id="behavior4" name="behaviorRating" value="4"><label for="behavior4">&#9733;</label>
+                <input type="radio" id="behavior3" name="behaviorRating" value="3"><label for="behavior3">&#9733;</label>
+                <input type="radio" id="behavior2" name="behaviorRating" value="2"><label for="behavior2">&#9733;</label>
+                <input type="radio" id="behavior1" name="behaviorRating" value="1"><label for="behavior1">&#9733;</label>
+            </div>
+
+            <!-- Company Services Rating -->
+            <label for="servicesRating">Rate the Company's Services:</label>
+            <div class="rating" id="servicesRating">
+                <input type="radio" id="services5" name="servicesRating" value="5" required><label for="services5">&#9733;</label>
+                <input type="radio" id="services4" name="servicesRating" value="4"><label for="services4">&#9733;</label>
+                <input type="radio" id="services3" name="servicesRating" value="3"><label for="services3">&#9733;</label>
+                <input type="radio" id="services2" name="servicesRating" value="2"><label for="services2">&#9733;</label>
+                <input type="radio" id="services1" name="servicesRating" value="1"><label for="services1">&#9733;</label>
+            </div>
+
+            <!-- Experience Feedback -->
+            <label for="experience">Describe Your Overall Experience:</label>
+            <textarea id="experience" name="experience" placeholder="Please share your overall experience with the service..." required></textarea>
+
+            <!-- General Feedback -->
+            <label for="feedback">Additional Comments:</label>
+            <textarea id="feedback" name="feedback" placeholder="Please share any additional feedback..." required></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit Feedback</button>
+            <p id="feedbackMessage" class="message"></p>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WasteNot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle form submission with a custom message
+        document.getElementById("receiverFeedbackForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            document.getElementById("feedbackMessage").textContent = "Thank you for your feedback, we appreciate your input!";
+            this.reset(); // Reset the form fields
+        });
+    </script>
+
+</body>
+</html>

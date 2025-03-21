@@ -1,0 +1,672 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styles */
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #f39c12; /* Highlight color on hover */
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu ul li a {
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #f39c12; /* Highlight color on hover */
+    border-radius: 4px;
+}
+
+/* Donate Button Styles */
+.btn-Login {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #121212;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-Login:hover {
+    background-color: #e67e22;
+    color: #fff;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #ffffff;
+}
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    position: relative;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu ul li {
+    display: inline;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-Login {
+    cursor: pointer;
+}
+
+/* Dropdown form styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #5e35b1;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    padding-left: 40px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5e35b1;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forgot-password {
+    text-align: right;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5e35b1;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #673ab7;
+}
+
+.register {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register a {
+    color: #5e35b1;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+/* Buttons Styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0057d9;
+    color: #fff;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+#register-options button {
+    background-color: #007BFF;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#register-options button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Fields */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.password-note {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Error and Success Messages */
+.message {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #eaeaea; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #282828; /* Darker header background */
+    padding: 20px 0;
+}
+
+.header .logo a {
+    color: #ffcc00; /* Highlighted logo color */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: #eaeaea; /* Light text color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333; /* Hero background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    margin: 20px 0;
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #ffcc00; /* Button background */
+    color: #1a1a1a; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #333; /* Dark background */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px; /* Control width for better readability */
+}
+.about-us h2 {
+    color: #ffcc00; /* Highlighted text color */
+}
+.about-us p {
+    color: #eaeaea; /* Light text color */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 40px;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team-member {
+    margin: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    background-color: #fff;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    color: #333;
+}
+
+.team-member p {
+    color: #666;
+}
+
+/* Registration Forms */
+.form {
+    background-color: #555; /* Form background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form h2 {
+    color: #ffcc00; /* Highlighted form title color */
+}
+
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #777; /* Input border color */
+    border-radius: 5px;
+    background-color: #666; /* Input background */
+    color: #eaeaea; /* Input text color */
+}
+
+.form input:focus {
+    border-color: #ffcc00; /* Input border color on focus */
+    outline: none;
+}
+
+.password-note {
+    font-size: 12px;
+    color: #ccc; /* Note text color */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #282828; /* Footer background */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #eaeaea; /* Footer link color */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+/* Footer Section Styles */
+.footer {
+    background-color: #1f1f1f; /* Darker background for footer */
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Top */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Footer Links */
+.footer-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f39c12; /* Orange highlight for headings */
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #b0b0b0; /* Light gray for link text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff; /* White color on hover */
+}
+
+/* Quick Contact Styling */
+.quick-contact {
+    background-color: #2c3e50; /* Dark blue background */
+    color: #ecf0f1; /* Light text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    max-width: 400px; /* Set a max-width */
+    margin: 20px auto; /* Center the element */
+    text-align: left; /* Left-align the content */
+}
+
+/* Heading Styling */
+.quick-contact h3 {
+    font-size: 1.5rem;
+    color: #f39c12; /* Warm yellow heading color */
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+.quick-contact ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.quick-contact ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Links Styling */
+.quick-contact a {
+    color: #1abc9c; /* Bright teal color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.quick-contact a:hover {
+    color: #16a085; /* Darker teal on hover */
+}
+
+/* Phone Number and Address Styling */
+.quick-contact li {
+    display: flex;
+    align-items: center;
+}
+
+.quick-contact li::before {
+    content: "•"; /* Add a bullet point for each list item */
+    color: #f39c12; /* Same color as the heading */
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+/* Footer Social Media */
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f39c12; /* Orange highlight for headings */
+}
+
+.social-icons a {
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333333; /* Border between footer top and bottom */
+    padding-top: 20px;
+    color: #b0b0b0; /* Light gray for copyright text */
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
